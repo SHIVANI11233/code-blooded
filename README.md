@@ -1,42 +1,31 @@
-# SAL — Proof-of-Presence (Phase 1)
+<<<<<<< HEAD
+>>>>>>> 1836f865e3df30124a1ed6c803c683c02cd7fc2b
+# SAL + Proof-of-Presence
 
-Student check-in with **physical presence** (ESP8266), **privacy-preserving hashing**, and **AI trust validation**.
+A decentralized, AI-verified campus participation and achievement system.
 
-## Run the app
+## 🚀 Overview
+This project combines:
+- ESP8266 IoT devices for physical presence detection
+- Privacy-preserving hashing
+- AI-based trust validation
+- Algorand blockchain for immutable records
+- Soulbound Tokens (SBTs) for permanent achievements
 
-**1. Start the backend** (required for hash verification):
+## 🧩 Architecture
+ESP8266 → Backend → Hash + AI → Blockchain → Dashboard
 
-```bash
-cd sal-backend
-python main.py
-```
+## 🛠 Tech Stack
+- ESP8266 (IoT)
+- Python + Flask
+- SHA-256 Hashing
+- Algorand (TestNet)
+- PyTeAL Smart Contracts
+- HTML/CSS Dashboard
 
-**2. Serve the frontend**
+## 📌 Status
+Phase 1–4: Completed  
+Phase 5–7: In progress  
 
-```bash
-# From project root
-python -m http.server 8080
-# Or: npx --yes serve -p 8080
-```
-
-Open **http://localhost:8080**. Use **Demo mode** to test without ESP8266.
-
-## Phase 1 data flow
-
-```
-ESP8266 session → payload (session_id|timestamp|student_id) → SHA-256 hash
-→ POST /attendance/participate → hash verify + duplicate check + AI trust → record
-```
-
-See [docs/DATA_FLOW.md](docs/DATA_FLOW.md) for details.
-
-## With ESP8266
-
-1. Flash `esp8266/sal_esp8266.ino` (see [esp8266/README.md](esp8266/README.md)).
-2. Connect phone to ESP WiFi (`SAL_AI_WORKSHOP`).
-3. Disable Demo mode, click **Mark Attendance**.
-
-## What's next
-
-- Phase 2: Algorand smart contract + immutable records
-- Phase 3: Soulbound Achievement Tokens (SAL)
+## 📜 License
+MIT
