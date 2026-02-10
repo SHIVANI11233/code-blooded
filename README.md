@@ -157,8 +157,7 @@ SAL-Proof-of-Presence/
 
 ## 👩‍💻 Team
 
-Built with ❤️ by **Code-Blooded**  
-(MLSC / Hackathon Project)
+Built with  by **Code-Blooded**  
 
 ---
 
